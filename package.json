@@ -2,7 +2,7 @@
   "name": "backend-boilerplete",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT",
+  "license": "Proprietary",
   "scripts": {
     "start": "babel -d ./dist ./src -s",
     "dev": "nodemon dev.js",
