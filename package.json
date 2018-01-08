@@ -4,24 +4,24 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "precommit": "lint-staged",
     "start": "babel -d ./dist ./src -s",
-    "dev": "node dev.js",
+    "dev": "nodemon dev.js",
     "lint:js": "eslint ./src",
-    "test": ""
+    "test": "",
+    "precommit": "lint-staged"
   },
   "lint-staged": {
     "*.js": ["eslint"]
   },
   "pre-commit": "precommit",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
     "babel-register": "^6.26.0",
     "eslint": "^4.15.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.8.0",
     "lint-staged": "^6.0.0",
+    "nodemon": "^1.14.9",
     "pre-commit": "^1.2.2"
   },
   "eslintConfig": {
@@ -32,6 +32,7 @@
     }
   },
   "dependencies": {
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "lodash": "^4.17.4"
