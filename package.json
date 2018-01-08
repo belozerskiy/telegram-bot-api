@@ -7,8 +7,9 @@
     "start": "babel -d ./dist ./src -s",
     "dev": "nodemon dev.js",
     "lint:js": "eslint ./src",
+    "doc:js": "jsdoc -d ./doc ./src",
     "test": "",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged && yarn run doc:js"
   },
   "lint-staged": {
     "*.js": ["eslint"]
@@ -20,6 +21,7 @@
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.8.0",
+    "jsdoc": "^3.5.5",
     "lint-staged": "^6.0.0",
     "nodemon": "^1.14.9",
     "pre-commit": "^1.2.2"
