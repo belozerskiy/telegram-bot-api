@@ -8,7 +8,7 @@
     "dev": "node dev.js",
     "lint:js": "eslint ./src",
     "test": "",
-    "precommit": "lint-staged"
+    "pre-commit": "lint-staged"
   },
   "lint-staged": {
     "*.js": "eslint"
