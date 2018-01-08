@@ -4,14 +4,14 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "precommit": "lint-staged",
     "start": "babel -d ./dist ./src -s",
     "dev": "node dev.js",
     "lint:js": "eslint ./src",
-    "test": "",
-    "pre-commit": "lint-staged"
+    "test": ""
   },
   "lint-staged": {
-    "*.js": "eslint"
+    "*.js": ["eslint"]
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -20,6 +20,7 @@
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.8.0",
+    "lint-staged": "^6.0.0",
     "pre-commit": "^1.2.2"
   },
   "eslintConfig": {
