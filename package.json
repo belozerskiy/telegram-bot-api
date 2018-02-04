@@ -5,7 +5,7 @@
   "license": "proprietary",
   "scripts": {
     "start": "babel -d ./dist ./src -s",
-    "dev": "nodemon dev.js",
+    "dev": "nodemon dev.js | bunyan",
     "lint:js": "eslint ./src",
     "doc:js": "jsdoc -d ./doc ./src",
     "test": "",
@@ -37,7 +37,10 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.1",
-    "lodash": "^4.17.4"
+    "bluebird": "^3.5.1",
+    "bunyan": "^1.8.12",
+    "lodash": "^4.17.4",
+    "underscore": "^1.8.3"
   },
   "babel": {
     "presets": [
